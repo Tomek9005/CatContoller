@@ -1,15 +1,13 @@
 package com.sda.cats.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
 @Builder
 @Data
+
 public class CatDto {
     private Long id;
 

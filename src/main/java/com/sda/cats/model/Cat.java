@@ -1,14 +1,16 @@
 package com.sda.cats.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
+import lombok.*;
+import org.springframework.stereotype.Service;
 
 import javax.persistence.*;
 
 @Entity(name="cats")
-@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
+@Builder
+@Setter
 public class Cat {
 
     @Id
